@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+aside .box, nav .login, nav .under, aside .box .place_share .btn, main .btn {
+  box-shadow: 1px 12px 10px rgba(54, 228, 234, 0.2);
+}
+
+aside .box .place_share .btn, main .btn {
+  align-items: center;
+  background-color: #36E4EA;
+  position: relative;
+  width: 70%;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+body {
+  font-family: Poppins;
+  margin: 2rem 8rem;
+  background: #F3FFFF;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    width: auto;
+    margin: 8px 15px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo_div h2 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 800;
+}
+nav .logo_div h2 span {
+  color: #36E4EA;
+  font-weight: 800;
+}
+nav .menu, nav .sign_log {
+  display: flex;
+  justify-content: space-around;
+}
+nav .link, nav .sign_log div :nth-child(1n) {
+  padding: 0 15px;
+}
+nav .is_active {
+  color: #36E4EA;
+  font-weight: bold;
+}
+nav .under {
+  background: #36E4EA;
+  border: none;
+  border-radius: 3px;
+  height: 3px;
+  width: 18px;
+}
+nav .sign_log {
+  font-weight: bold;
+}
+nav .login {
+  padding: 7px 26px !important;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 1.1rem;
+  background: #36E4EA;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  nav {
+    min-width: 320px;
+    max-width: 479px;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .menu, nav .sign_log {
+    display: none;
+  }
+  nav .all_burger {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(54, 228, 234, 0.2);
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  nav .all_burger:active {
+    transform: scale(0.9) 0.4s ease-in-out;
+    transition-delay: 0.4s;
+  }
+  nav .burger {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+  }
+  nav .burger::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+    margin-top: 6px;
+  }
+  nav .burger::after {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+    margin-top: 3px;
+  }
+}
+
+.line {
+  background: rgba(0, 0, 0, 0.1);
+  height: 1.5px;
+  border: none;
+  margin-bottom: 7.5rem;
+}
+
+.sign {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding-bottom: 5rem;
+  margin-top: -7rem;
+  padding-left: 85%;
+}
+
+main {
+  display: flex;
+}
+main .section1 {
+  width: 38%;
+}
+main .section1 h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+main .section1 h1 span {
+  color: #36E4EA;
+}
+main .paragraph {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+main .btn {
+  padding: 19px 20px;
+}
+main .btn a {
+  color: #fff !important;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+main .btn span {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+main .join {
+  margin-top: 7rem;
+}
+main .join p {
+  font-weight: 500;
+}
+main .join .join_logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  width: 65%;
+}
+
+.hero {
+  margin-top: -11.7rem;
+  width: 52%;
+  position: relative;
+}
+.hero img {
+  height: 48rem;
+  width: 100%;
+  margin-left: 1rem;
+  position: absolute;
+}
+
+aside {
+  width: 35%;
+  margin-left: -3rem;
+}
+aside .box {
+  background-color: #fff;
+  border-radius: 1.4rem;
+  height: auto;
+  padding: 2.4rem;
+}
+aside .box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+aside .box h2 span {
+  color: #36E4EA;
+}
+aside .box .current {
+  background-color: rgba(54, 228, 234, 0.1);
+  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+}
+aside .box .current .element {
+  display: flex;
+  padding-top: 10px;
+}
+aside .box .current .element img {
+  margin-top: 0.2rem;
+}
+aside .box .current .element .stat {
+  padding-left: 0.6rem;
+}
+aside .box .current .element .stat span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #36E4EA;
+}
+aside .box .place_share {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+aside .box .place_share .btn {
+  padding: 10px;
+  width: 50%;
+}
+aside .box .place_share p {
+  color: #36E4EA;
+  padding-left: 30px;
+}
+aside .contributor h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1.8rem 0;
+}
+aside .contributor .contrib {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+aside .contributor .contrib span {
+  color: #36E4EA;
+}
+aside .contributor .contrib .img {
+  display: flex;
+}
+aside .contributor .contrib .img img {
+  width: 30%;
+  height: 100%;
+}
+aside .contributor .contrib .img p {
+  color: #36E4EA;
+}
+aside .contributor .contrib .img div {
+  margin-left: 10px;
+}
+aside .contributor .contrib .img div h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+aside .power {
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 2.2rem;
+}
+aside .power img {
+  width: 5%;
+  height: 5%;
+  position: relative;
+  align-items: center;
+  margin-bottom: -3px;
+}
+aside .power span {
+  font-weight: 800;
+  color: #36E4EA;
+}
+
+/*# sourceMappingURL=style.css.map */
